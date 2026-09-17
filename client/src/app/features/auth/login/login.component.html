@@ -1,0 +1,104 @@
+<div class="login-container">
+  <a class="a11y-skip-link" href="#login-main">Skip to login form</a>
+
+  <button
+    #hamburgerButton
+    type="button"
+    class="hamburger-button"
+    [class.open]="showQuickLinksMenu"
+    (click)="toggleQuickLinksMenu()"
+    aria-label="Open quick links menu"
+    [attr.aria-expanded]="showQuickLinksMenu"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="menu-overlay" *ngIf="showQuickLinksMenu" (click)="closeQuickLinksMenu()"></div>
+
+  <aside class="quick-links-menu" [class.open]="showQuickLinksMenu" aria-label="Quick Links">
+    <div class="menu-header">
+      <h3>Quick Links</h3>
+      <button type="button" class="menu-close" (click)="closeQuickLinksMenu()" aria-label="Close quick links menu">
+        &times;
+      </button>
+    </div>
+
+    <div class="menu-item">
+      <strong>Admissions</strong>
+      <p>For enrolling guardians, students, and teachers.</p>
+      <a #firstQuickLink routerLink="/admissions" (click)="closeQuickLinksMenu()">View Admissions</a>
+    </div>
+
+    <div class="menu-item">
+      <strong>Our School</strong>
+      <p>Learn more about our school programs and information.</p>
+      <a routerLink="/our-school" (click)="closeQuickLinksMenu()">View School Info</a>
+    </div>
+
+    <div class="menu-item">
+      <strong>Contact Us</strong>
+      <p>For support and general questions.</p>
+      <a routerLink="/contact" (click)="closeQuickLinksMenu()">Contact Us</a>
+    </div>
+  </aside>
+
+  <div id="login-main" class="login-card" tabindex="-1" aria-label="Login form">
+    <div class="login-header">
+      <h1>Welcome to FTEHC</h1>
+      <h2>School Portal</h2>
+      <p>Login to your account</p>
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          id="email"
+          type="email"
+          formControlName="email"
+          class="form-control"
+          placeholder="Enter your email"
+          [class.error]="email?.invalid && email?.touched"
+        />
+        <span class="error-message" *ngIf="email?.invalid && email?.touched">
+          <span *ngIf="email?.errors?.['required']">Email is required</span>
+          <span *ngIf="email?.errors?.['email']">Please enter a valid email</span>
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          id="password"
+          type="password"
+          formControlName="password"
+          class="form-control"
+          placeholder="Enter your password"
+          [class.error]="password?.invalid && password?.touched"
+        />
+        <span class="error-message" *ngIf="password?.invalid && password?.touched">
+          <span *ngIf="password?.errors?.['required']">Password is required</span>
+          <span *ngIf="password?.errors?.['minlength']">Password must be at least 6 characters</span>
+        </span>
+      </div>
+
+      <button
+        type="submit"
+        class="login-button"
+        [disabled]="loginForm.invalid || loading"
+      >
+        {{ loading ? 'Logging in...' : 'Login' }}
+      </button>
+    </form>
+
+
+    <div class="login-footer">
+      <p>Demo credentials: teacher&#64;school.com / password123</p>
+      <p>
+        <a href="/forgot-password">Forgot Password?</a>
+      </p>
+    </div>
+  </div>
+</div>

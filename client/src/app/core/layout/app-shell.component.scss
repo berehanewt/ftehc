@@ -1,0 +1,111 @@
+.layout-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fb;
+  position: relative;
+}
+
+.layout-sidebar {
+  width: 280px;
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  padding: 1rem 0.75rem;
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
+  z-index: 10;
+
+  &.mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+  }
+
+  &.mobile.open {
+    transform: translateX(0);
+  }
+
+  :host ::ng-deep .p-panelmenu .p-panelmenu-header-link,
+  :host ::ng-deep .p-panelmenu .p-menuitem-link {
+    padding: 0.75rem 0.9rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.layout-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-topbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+
+  h1 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #0f172a;
+    flex: 1;
+  }
+
+  .topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .user-name {
+    font-size: 0.9rem;
+    color: #475569;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.layout-content {
+  flex: 1;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  z-index: 8;
+}
+
+@media (max-width: 991px) {
+  .layout-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+  }
+
+  .layout-sidebar.open {
+    transform: translateX(0);
+  }
+
+  .layout-topbar {
+    .menu-toggle {
+      display: inline-flex;
+    }
+  }
+}
+

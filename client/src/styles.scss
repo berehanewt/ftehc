@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+.a11y-skip-link {
+  position: absolute;
+  top: -3rem;
+  left: 1rem;
+  z-index: 1300;
+  background: #0f172a;
+  color: #fff;
+  padding: 0.55rem 0.9rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: top 0.2s ease;
+}
+
+.a11y-skip-link:focus {
+  top: 0.75rem;
+  outline: 2px solid #bfdbfe;
+  outline-offset: 2px;
+}
+

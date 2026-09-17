@@ -1,0 +1,32 @@
+<div class="layout-wrapper">
+  <aside class="layout-sidebar" [class.open]="sidenavOpen" [class.mobile]="isMobile">
+    <p-panelMenu [model]="menuModel"></p-panelMenu>
+  </aside>
+
+  <div class="layout-main">
+    <header class="layout-topbar">
+      <button
+        pButton
+        type="button"
+        icon="pi pi-bars"
+        class="p-button-text menu-toggle"
+        aria-label="Toggle navigation"
+        (click)="toggleSidenav()"
+      ></button>
+
+      <h1>School Portal</h1>
+
+      <div class="topbar-actions">
+        <span *ngIf="user" class="user-name">{{ getDisplayName() }}</span>
+        <button pButton type="button" label="Logout" icon="pi pi-sign-out" (click)="logout()"></button>
+      </div>
+    </header>
+
+    <main class="layout-content" (click)="closeSidenavOnMobile()">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+
+  <div *ngIf="isMobile && sidenavOpen" class="sidebar-backdrop" (click)="closeSidenavOnMobile()"></div>
+</div>
+

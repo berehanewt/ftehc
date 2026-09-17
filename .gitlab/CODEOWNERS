@@ -1,0 +1,15 @@
+# Minimal CODEOWNERS (GitLab)
+# Uses the project GitLab group inferred from remote origin.
+
+* @felege-tibebe-ethiopian-heritage-center-group
+
+/src/** @felege-tibebe-ethiopian-heritage-center-group
+/client/** @felege-tibebe-ethiopian-heritage-center-group
+
+/docs/Auth-API-Contracts.md @felege-tibebe-ethiopian-heritage-center-group
+/docs/Admin-API-Contracts.md @felege-tibebe-ethiopian-heritage-center-group
+/docs/Frontend-Auth-Integration.md @felege-tibebe-ethiopian-heritage-center-group
+
+/docs/** @felege-tibebe-ethiopian-heritage-center-group
+
+/.gitlab-ci.yml @felege-tibebe-ethiopian-heritage-center-group

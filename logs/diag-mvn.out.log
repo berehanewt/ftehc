@@ -1,0 +1,108 @@
+[INFO] Scanning for projects...
+Downloading from central: https://repo.maven.apache.org/maven2/org/cyclonedx/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/flywaydb/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/io/github/git-commit-id/maven-metadata.xml
+Progress (1): 255 BProgress (2): 255 B | 243 BProgress (3): 255 B | 243 B | 234 BProgress (4): 255 B | 243 B | 234 B | 249 B                                           Downloaded from central: https://repo.maven.apache.org/maven2/org/cyclonedx/maven-metadata.xml (243 B at 654 B/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/maven-metadata.xml (249 B at 671 B/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/io/github/git-commit-id/maven-metadata.xml (255 B at 685 B/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/flywaydb/maven-metadata.xml (234 B at 627 B/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/jooq/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/liquibase/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/graalvm/buildtools/maven-metadata.xml
+Progress (1): 375 BProgress (2): 375 B | 242 BProgress (3): 375 B | 242 B | 394 BProgress (4): 375 B | 242 B | 394 B | 398 B                                           Downloaded from central: https://repo.maven.apache.org/maven2/org/graalvm/buildtools/maven-metadata.xml (242 B at 3.7 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/maven-metadata.xml (375 B at 5.5 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/jooq/maven-metadata.xml (398 B at 5.8 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
+Downloaded from central: https://repo.maven.apache.org/maven2/org/liquibase/maven-metadata.xml (394 B at 5.6 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml
+Progress (1): 3.4 kBProgress (1): 3.4 kBProgress (1): 7.6 kBProgress (1): 12 kB Progress (1): 15 kBProgress (1): 20 kBProgress (1): 21 kBProgress (2): 21 kB | 4.6 kBProgress (2): 21 kB | 9.7 kBProgress (2): 21 kB | 14 kB                            Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml (14 kB at 166 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/mojo/maven-metadata.xml (21 kB at 202 kB/s)
+[INFO] 
+[INFO] --------------------------< com.ftehc:ftehc >---------------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.14:run (default-cli) > test-compile @ ftehc >>>
+[WARNING] The POM for org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:2.8.16 is invalid, transitive dependencies (if any) will not be available: 1 problem was encountered while building the effective model for org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.16
+[FATAL] The parents form a cycle: org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.16 -> org.springframework.boot:spring-boot-starter-parent:3.5.11 -> org.springframework.boot:spring-boot-dependencies:3.5.11 -> org.springframework.boot:spring-boot-starter-parent:3.5.11 @ com.expd.worker:script-log-consumer-worker project:3.5.11
+
+[WARNING] The POM for org.springdoc:springdoc-openapi-starter-common:jar:2.8.16 is invalid, transitive dependencies (if any) will not be available: 1 problem was encountered while building the effective model for org.springdoc:springdoc-openapi-starter-common:2.8.16
+[FATAL] The parents form a cycle: org.springdoc:springdoc-openapi-starter-common:2.8.16 -> org.springframework.boot:spring-boot-starter-parent:3.5.11 -> org.springframework.boot:spring-boot-dependencies:3.5.11 -> org.springframework.boot:spring-boot-starter-parent:3.5.11 @ com.expd.worker:script-log-consumer-worker project:3.5.11
+
+[WARNING] The POM for org.springdoc:springdoc-openapi-starter-webmvc-api:jar:2.8.16 is invalid, transitive dependencies (if any) will not be available: 1 problem was encountered while building the effective model for org.springdoc:springdoc-openapi-starter-webmvc-api:2.8.16
+[FATAL] The parents form a cycle: org.springdoc:springdoc-openapi-starter-webmvc-api:2.8.16 -> org.springframework.boot:spring-boot-starter-parent:3.5.11 -> org.springframework.boot:spring-boot-dependencies:3.5.11 -> org.springframework.boot:spring-boot-starter-parent:3.5.11 @ com.expd.worker:script-log-consumer-worker project:3.5.11
+
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ftehc ---
+[INFO] Copying 3 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:copy-resources (copy-frontend-browser-dist) @ ftehc ---
+[INFO] Copying 0 resource from client\dist\school-portal-frontend\browser to target\classes\static
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ ftehc ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ftehc ---
+[INFO] skip non existing resourceDirectory C:\Users\chq-berehanet\DBKG\FTEHC-School\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ ftehc ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.5.14:run (default-cli) < test-compile @ ftehc <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.14:run (default-cli) @ ftehc ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.14)
+
+2026-05-19T18:33:45.866-07:00  INFO 25564 --- [ftehc] [           main] com.ftehc.ftehc.FtehcApplication         : Starting FtehcApplication using Java 17.0.12 with PID 25564 (C:\Users\chq-berehanet\DBKG\FTEHC-School\target\classes started by chq-berehanet in C:\Users\chq-berehanet\DBKG\FTEHC-School)
+2026-05-19T18:33:45.869-07:00  INFO 25564 --- [ftehc] [           main] com.ftehc.ftehc.FtehcApplication         : The following 1 profile is active: "local"
+2026-05-19T18:33:46.782-07:00  INFO 25564 --- [ftehc] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-05-19T18:33:46.847-07:00  INFO 25564 --- [ftehc] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 14 MongoDB repository interfaces.
+2026-05-19T18:33:47.264-07:00  INFO 25564 --- [ftehc] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-19T18:33:47.278-07:00  INFO 25564 --- [ftehc] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-19T18:33:47.279-07:00  INFO 25564 --- [ftehc] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-05-19T18:33:47.342-07:00  INFO 25564 --- [ftehc] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-19T18:33:47.343-07:00  INFO 25564 --- [ftehc] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1443 ms
+2026-05-19T18:33:47.612-07:00  INFO 25564 --- [ftehc] [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Azul Systems, Inc./17.0.12+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@2c99c8d], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5fb07347, com.mongodb.Jep395RecordCodecProvider@3ef2b8e5, com.mongodb.KotlinCodecProvider@49190ed6]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@2035d65b], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-05-19T18:33:47.628-07:00  INFO 25564 --- [ftehc] [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13068600, minRoundTripTimeNanos=0}
+2026-05-19T18:33:48.517-07:00  INFO 25564 --- [ftehc] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-05-19T18:33:48.558-07:00  WARN 25564 --- [ftehc] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9d816096-a60e-4b6b-afd8-e34c7bb09144
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-19T18:33:48.566-07:00  INFO 25564 --- [ftehc] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-05-19T18:33:49.005-07:00  INFO 25564 --- [ftehc] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-05-19T18:33:49.026-07:00  INFO 25564 --- [ftehc] [           main] com.ftehc.ftehc.FtehcApplication         : Started FtehcApplication in 3.498 seconds (process running for 4.188)
+2026-05-19T18:33:49.120-07:00  WARN 25564 --- [ftehc] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-05-19T18:33:49.124-07:00  WARN 25564 --- [ftehc] [           main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-05-19T18:34:28.254-07:00  INFO 25564 --- [ftehc] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-19T18:34:28.255-07:00  INFO 25564 --- [ftehc] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-19T18:34:28.256-07:00  INFO 25564 --- [ftehc] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:23 min
+[INFO] Finished at: 2026-05-19T18:34:51-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.5.14:run (default-cli) on project ftehc: Process terminated with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

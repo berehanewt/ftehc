@@ -1,0 +1,50 @@
+{
+  "name": "school-portal-frontend",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --proxy-config proxy.conf.json",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "analyze:stats": "node tools/analyze-stats.mjs",
+    "test:admin-filters": "vitest run src/app/features/admin/enrollment/enrollment.component.spec.ts src/app/features/admin/guardian-links/guardian-links.component.spec.ts",
+    "test:teacher-homework": "vitest run src/app/features/teacher/homework/homework-list.component.spec.ts",
+    "test:teacher-submissions": "vitest run src/app/features/teacher/submissions/submissions-list.component.spec.ts",
+    "test:teacher-core": "vitest run src/app/features/teacher/homework/homework-list.component.spec.ts src/app/features/teacher/submissions/submissions-list.component.spec.ts",
+    "test:student-submissions": "vitest run src/app/features/student/submissions/student-submissions.component.spec.ts",
+    "test:guardian-homework": "vitest run src/app/features/guardian/homework/guardian-homework.component.spec.ts",
+    "test:filters-pack": "vitest run src/app/features/guardian/homework/guardian-homework.component.spec.ts src/app/features/teacher/submissions/submissions-list.component.spec.ts",
+    "test:role-pack": "vitest run src/app/features/teacher/homework/homework-list.component.spec.ts src/app/features/teacher/submissions/submissions-list.component.spec.ts src/app/features/student/submissions/student-submissions.component.spec.ts src/app/features/guardian/homework/guardian-homework.component.spec.ts",
+    "test:deeplink-monitor-pack": "vitest run src/app/features/teacher/homework/homework-list.component.spec.ts src/app/features/teacher/submissions/submissions-list.component.spec.ts src/app/features/student/submissions/student-submissions.component.spec.ts src/app/features/guardian/homework/guardian-homework.component.spec.ts",
+    "test:portal-critical": "vitest run src/app/features/admin/enrollment/enrollment.component.spec.ts src/app/features/admin/guardian-links/guardian-links.component.spec.ts src/app/features/teacher/homework/homework-list.component.spec.ts src/app/features/teacher/submissions/submissions-list.component.spec.ts src/app/features/student/submissions/student-submissions.component.spec.ts src/app/features/guardian/homework/guardian-homework.component.spec.ts"
+  },
+  "private": true,
+  "packageManager": "npm@11.6.2",
+  "dependencies": {
+    "@angular/animations": "^21.2.12",
+    "@angular/cdk": "^21.2.10",
+    "@angular/common": "^21.2.0",
+    "@angular/compiler": "^21.2.0",
+    "@angular/core": "^21.2.0",
+    "@angular/forms": "^21.2.0",
+    "@angular/material": "^21.2.10",
+    "@angular/platform-browser": "^21.2.0",
+    "@angular/platform-browser-dynamic": "^21.2.12",
+    "@angular/router": "^21.2.0",
+    "axios": "^1.16.0",
+    "primeicons": "^7.0.0",
+    "primeng": "^20.3.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^21.2.10",
+    "@angular/cli": "^21.2.10",
+    "@angular/compiler-cli": "^21.2.0",
+    "jsdom": "^28.0.0",
+    "prettier": "^3.8.1",
+    "typescript": "~5.9.2",
+    "vitest": "^4.0.8"
+  }
+}
